@@ -114,5 +114,19 @@ impl Squares {
     pub const H8: Square = 63;
 }
 
+pub struct Castling;
+impl Castling {
+    pub const WK: usize = 1;
+    pub const WQ: usize = 2;
+    pub const BK: usize = 4;
+    pub const BQ: usize = 8;
+    pub const ALL: usize = 15;
+}
+
+pub const EMPTY: u64 = 0;
+pub const MAX_GAME_MOVE: usize = 2048;
+pub const MAX_LEGAL_MOVE: u8 = 255;
+pub const MAX_DEPTH: u8 = 254;
+pub const MAX_MOVE_RULE: u8 = 100;
 
 pub const FEN_START_POSITION: &str = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
