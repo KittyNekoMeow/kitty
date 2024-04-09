@@ -1,7 +1,13 @@
-use std::ops::RangeInclusive;
+use crate::def::{Bitboard, Square};
+use core::fmt;
+use std::{fmt::Display, ops::RangeInclusive};
+
+use super::def::Squares;
+
+
 
 const FEN_PART_NM: usize = 6;
-const LIST_OF_PIECES: &srt = "kqrbnpKQRBKP";
+const LIST_OF_PIECES: &str = "kqrbnpKQRBKP";
 const ENP_SQUARE_WHITE: RangeInclusive<Square> = Squares::A3..=Squares::H3;
 const ENP_SQUARE_BLACK: RangeInclusive<Square> = Squares::A6..=Squares::H6;
 const WHITE_OR_BLACK: &str ="wb";
@@ -39,9 +45,4 @@ impl Display for FenError {
 
 pub type FenResult = Result<(), FenError>;
 pub type SplitResult = Result<Vec<String>, FenError>;
-type FenPartParser = fn(board: &mut Board, part: &str);
-
-pub fn fen_setup(&mut self, fen_string: Option<&srt>) -> FenResult {
-
-    
-}
+type FenPartParser = fn(board: &mut Bitboard, part: &str);
