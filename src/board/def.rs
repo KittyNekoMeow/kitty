@@ -120,5 +120,5 @@ impl Pieces {
 }
 
 type TBBSquares = [Bitboard; NumberOf::SQUARES];
-// TODO fixe BB_SQUARES
+// TODO! fix BB_SQUARES
 pub const BB_SQUARES: TBBSquares = [0; 64];
