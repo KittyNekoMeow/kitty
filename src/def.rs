@@ -23,11 +23,11 @@ impl Pieces {
 
 pub struct Castling;
 impl Castling {
-    pub const WK: usize = 1;
-    pub const WQ: usize = 2;
-    pub const BK: usize = 4;
-    pub const BQ: usize = 8;
-    pub const ALL: usize = 15;
+    pub const WK: u8 = 1;
+    pub const WQ: u8 = 2;
+    pub const BK: u8 = 4;
+    pub const BQ: u8 = 8;
+    pub const ALL: u8 = 15;
 }
 
 pub struct NumberOf;

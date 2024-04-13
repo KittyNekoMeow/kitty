@@ -1,5 +1,6 @@
 mod def;
 mod board;
-use board::fen;
+mod misc;
 fn main() {
+    
 }
