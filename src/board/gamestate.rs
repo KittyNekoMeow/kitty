@@ -1,4 +1,4 @@
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Copy)]
 pub struct GameState {
     pub active_color: u8,
     pub castling: u8,
