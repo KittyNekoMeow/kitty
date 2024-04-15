@@ -6,6 +6,7 @@ pub mod def;
 pub mod fen;
 mod gamestate;
 mod history;
+mod zobrist;
 #[derive(Debug, Clone)]
 pub struct Board {
     pub bb_pieces: [[Bitboard; NumberOf::PIECE_TYPES]; Sides::BOTH],
