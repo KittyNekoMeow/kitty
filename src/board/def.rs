@@ -1,4 +1,4 @@
-use crate::def::{Bitboard, NumberOf, Piece, Square};
+use crate::def::{NumberOf, Piece, Square};
 
 pub const PIECE_NAMES: [&str; NumberOf::PIECE_TYPES + 1] = 
 ["King", "Queen", "Rook", "Bishop", "Knight", "Pawn", "-"];
@@ -119,6 +119,4 @@ impl Pieces {
     pub const NONE: Piece = 6;
 }
 
-type TBBSquares = [Bitboard; NumberOf::SQUARES];
-// TODO! fix BB_SQUARES
-pub const BB_SQUARES: TBBSquares = [0; 64];
+type TBBSquares = [u8; NumberOf::SQUARES];

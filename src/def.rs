@@ -1,4 +1,3 @@
-pub type Bitboard = u64;
 pub type Piece = usize;
 pub type Square = usize;
 pub type Side = usize;
